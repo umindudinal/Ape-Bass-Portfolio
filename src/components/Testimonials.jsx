@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Star, Quote, Sparkles, CheckCircle2, MessageSquarePlus, Send, ThumbsUp, MessageCircle } from 'lucide-react';
+import { Star, Quote, Sparkles, CheckCircle2, MessageSquarePlus, Send, ThumbsUp, MessageCircle, Loader2 } from 'lucide-react';
+import { fetchReviewsFromSupabase, saveReviewToSupabase } from '../services/supabaseReviews';
 
 export default function Testimonials() {
-  // Load only user-submitted comments from localStorage
+  // Load initial comments from localStorage (or empty array)
   const [reviewsList, setReviewsList] = useState(() => {
     const saved = localStorage.getItem('apebaas_user_reviews');
     if (saved) {
@@ -15,6 +16,8 @@ export default function Testimonials() {
     return [];
   });
 
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [showForm, setShowForm] = useState(false);
   
   // New Comment Form State
@@ -26,14 +29,30 @@ export default function Testimonials() {
   const [hoverStars, setHoverStars] = useState(0);
   const [submitted, setSubmitted] = useState(false);
 
+  // Load reviews from Supabase Cloud on page load
+  useEffect(() => {
+    async function loadCloudReviews() {
+      setIsLoading(true);
+      const cloudData = await fetchReviewsFromSupabase();
+      if (cloudData && Array.isArray(cloudData) && cloudData.length > 0) {
+        setReviewsList(cloudData);
+        localStorage.setItem('apebaas_user_reviews', JSON.stringify(cloudData));
+      }
+      setIsLoading(false);
+    }
+    loadCloudReviews();
+  }, []);
+
   // Persist reviews list to localStorage whenever updated
   useEffect(() => {
     localStorage.setItem('apebaas_user_reviews', JSON.stringify(reviewsList));
   }, [reviewsList]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!name.trim() || !quote.trim()) return;
+    if (!name.trim() || !quote.trim() || isSubmitting) return;
+
+    setIsSubmitting(true);
 
     const gradients = [
       "from-emerald-500 to-teal-600",
@@ -55,6 +74,9 @@ export default function Testimonials() {
       date: new Date().toLocaleDateString('en-GB')
     };
 
+    // Save directly to Supabase Database
+    await saveReviewToSupabase(newReview);
+
     const updatedList = [newReview, ...reviewsList];
     setReviewsList(updatedList);
     setName('');
@@ -62,6 +84,7 @@ export default function Testimonials() {
     setQuote('');
     setStars(5);
     setSubmitted(true);
+    setIsSubmitting(false);
 
     setTimeout(() => {
       setSubmitted(false);

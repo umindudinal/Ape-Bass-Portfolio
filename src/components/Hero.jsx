@@ -116,55 +116,36 @@ export default function Hero() {
           {/* Right Column: Phone Showcase Mockup with Organic Staggered Floating Cards */}
           <div className="lg:col-span-5 relative flex flex-col items-center justify-center select-none py-8">
             
-            {/* Top Center Floating Micro-Pill: 12+ Categories */}
-            <div className="absolute top-1 z-30 glass-card px-3.5 py-1.5 rounded-full shadow-lg items-center gap-2 animate-float-slow hidden sm:flex border border-slate-200/90 bg-white/95 text-xs font-extrabold text-[#002B49] -rotate-2 pointer-events-none" style={{ borderRadius: '9999px' }}>
-              <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center">
-                <Wrench size={12} />
-              </div>
-              <span>12+ Repair Categories</span>
-            </div>
-
-            {/* Floating Badge 1 - Staggered Top-Left (Tilted -5deg) */}
-            <div className="absolute -left-6 sm:-left-12 top-10 z-30 glass-card p-3 sm:p-3.5 rounded-2xl shadow-xl items-center gap-3 animate-float-slow hidden sm:flex border border-slate-200 bg-white/95 pointer-events-none -rotate-5" style={{ borderRadius: '16px' }}>
+            {/* Floating Feature 1 - Top Left: Verified Technicians */}
+            <div className="absolute -left-6 sm:-left-12 top-12 z-30 glass-card p-3 sm:p-3.5 rounded-2xl shadow-xl items-center gap-3 animate-float-slow hidden sm:flex border border-slate-200 bg-white/95 pointer-events-none -rotate-4" style={{ borderRadius: '16px' }}>
               <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold shrink-0">
                 <ShieldCheck size={22} />
               </div>
               <div className="text-left">
-                <div className="text-xs font-extrabold text-[#002B49]">Verified Technician</div>
-                <div className="text-[10px] text-emerald-700 font-bold">ID & NIC Checked</div>
+                <div className="text-xs font-extrabold text-[#002B49]">Verified Technicians</div>
+                <div className="text-[10px] text-emerald-700 font-bold">100% NIC Checked</div>
               </div>
             </div>
 
-            {/* Floating Badge 2 - Staggered Mid-Right (Tilted +4deg) */}
-            <div className="absolute -right-6 sm:-right-14 top-28 z-30 glass-card p-3 sm:p-3.5 rounded-2xl shadow-xl items-center gap-3 animate-float-reverse hidden sm:flex border border-slate-200 bg-white/95 pointer-events-none rotate-4" style={{ borderRadius: '16px' }}>
-              <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold shrink-0">
-                <Lock size={20} />
-              </div>
-              <div className="text-left">
-                <div className="text-xs font-extrabold text-[#002B49]">Password-less OTP</div>
-                <div className="text-[10px] text-amber-700 font-bold">Fast Phone Verification</div>
-              </div>
-            </div>
-
-            {/* Floating Badge 3 - Staggered Lower-Left (Tilted +3deg) */}
-            <div className="absolute -left-6 sm:-left-10 bottom-28 z-30 glass-card p-3 sm:p-3.5 rounded-2xl shadow-xl items-center gap-3 animate-float-slow hidden sm:flex border border-slate-200 bg-white/95 pointer-events-none rotate-3" style={{ borderRadius: '16px' }}>
+            {/* Floating Feature 2 - Top Right: Dual Mode Mobile App */}
+            <div className="absolute -right-6 sm:-right-12 top-20 z-30 glass-card p-3 sm:p-3.5 rounded-2xl shadow-xl items-center gap-3 animate-float-reverse hidden sm:flex border border-slate-200 bg-white/95 pointer-events-none rotate-4" style={{ borderRadius: '16px' }}>
               <div className="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold shrink-0">
                 <Users size={20} />
               </div>
               <div className="text-left">
-                <div className="text-xs font-extrabold text-[#002B49]">Dual Mode App</div>
-                <div className="text-[10px] text-purple-700 font-bold">Customer & Provider</div>
+                <div className="text-xs font-extrabold text-[#002B49]">Dual Mode Mobile App</div>
+                <div className="text-[10px] text-purple-700 font-bold">Customer & Baas Portal</div>
               </div>
             </div>
 
-            {/* Floating Badge 4 - Staggered Bottom-Right (Tilted -4deg) */}
-            <div className="absolute -right-6 sm:-right-12 bottom-8 z-30 glass-card p-3 sm:p-3.5 rounded-2xl shadow-xl items-center gap-3 animate-float-reverse hidden sm:flex border border-slate-200 bg-white/95 pointer-events-none -rotate-4" style={{ borderRadius: '16px' }}>
-              <div className="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center font-bold shrink-0">
-                <Clock size={22} />
+            {/* Floating Feature 3 - Bottom Left: Real User Reviews & Ratings */}
+            <div className="absolute -left-6 sm:-left-10 bottom-16 z-30 glass-card p-3 sm:p-3.5 rounded-2xl shadow-xl items-center gap-3 animate-float-slow hidden sm:flex border border-slate-200 bg-white/95 pointer-events-none rotate-3" style={{ borderRadius: '16px' }}>
+              <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold shrink-0">
+                <Star size={20} className="fill-amber-400 text-amber-500" />
               </div>
               <div className="text-left">
-                <div className="text-xs font-extrabold text-[#002B49]">Instant Booking</div>
-                <div className="text-[10px] text-sky-700 font-bold">Under 60 Seconds</div>
+                <div className="text-xs font-extrabold text-[#002B49]">Real User Reviews & Ratings</div>
+                <div className="text-[10px] text-amber-700 font-bold">Verified Community Feedback</div>
               </div>
             </div>
 

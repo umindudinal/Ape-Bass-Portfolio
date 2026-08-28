@@ -131,18 +131,18 @@ export default function InstallationGuide() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-white p-8 sm:p-12 rounded-3xl border border-slate-200/90 shadow-xl" style={{ borderRadius: '32px' }}>
           
           {/* Left Column: Phone Frame with Step Image */}
-          <div className="lg:col-span-6 flex justify-center">
-            <div className="relative w-64 sm:w-72 rounded-[18px] bg-slate-950 p-2 border-[3.5px] border-slate-800 shadow-2xl flex flex-col" style={{ borderRadius: '18px', boxShadow: '0 25px 60px rgba(0, 43, 73, 0.3)' }}>
-              {/* Screenshot Image Container */}
-              <div className="w-full bg-slate-100 rounded-xl overflow-hidden relative border border-slate-300 shadow-inner max-h-125 flex items-center justify-center">
+          <div className="lg:col-span-6 flex justify-center items-center">
+            <div className="relative w-56 sm:w-64 max-w-full rounded-[22px] bg-slate-950 p-2 border-[3.5px] border-slate-800 shadow-xl flex flex-col items-center" style={{ borderRadius: '22px', boxShadow: '0 22px 55px rgba(0, 43, 73, 0.28)' }}>
+              {/* Screenshot Image Container - Hugging exact image */}
+              <div className="w-full rounded-[15px] overflow-hidden relative border border-slate-700/60 shadow-md">
                 <img 
                   src={currentStep.image} 
                   alt={currentStep.title} 
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto block object-contain"
                 />
               </div>
               {/* Phone Gesture Bar */}
-              <div className="w-20 h-1 bg-slate-500/80 mx-auto rounded-full my-2"></div>
+              <div className="w-14 h-1 bg-slate-500/80 rounded-full my-1.5 shrink-0"></div>
             </div>
           </div>
 

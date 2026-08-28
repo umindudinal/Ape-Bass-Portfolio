@@ -2,11 +2,11 @@ const SUPABASE_URL = "https://jkpaufgndiurapvkwlml.supabase.co";
 const SUPABASE_KEY = "sb_publishable_pivcvfrJnuCP5SGPm1SRCA_h-TJXzT4";
 
 /**
- * Fetch all reviews from Supabase table 'reviews'
+ * Fetch all comments from Supabase table 'comments'
  */
 export async function fetchReviewsFromSupabase() {
   try {
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/reviews?select=*&order=created_at.desc`, {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/comments?select=*&order=created_at.desc`, {
       headers: {
         'apikey': SUPABASE_KEY,
         'Authorization': `Bearer ${SUPABASE_KEY}`
@@ -14,7 +14,7 @@ export async function fetchReviewsFromSupabase() {
     });
 
     if (!res.ok) {
-      console.warn("Supabase reviews table fetch status:", res.status);
+      console.warn("Supabase comments table fetch status:", res.status);
       return null;
     }
 
@@ -39,7 +39,7 @@ export async function fetchReviewsFromSupabase() {
 }
 
 /**
- * Insert a new review into Supabase table 'reviews'
+ * Insert a new comment into Supabase table 'comments'
  */
 export async function saveReviewToSupabase(reviewObj) {
   try {
@@ -53,7 +53,7 @@ export async function saveReviewToSupabase(reviewObj) {
       created_at: new Date().toISOString()
     };
 
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/reviews`, {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/comments`, {
       method: 'POST',
       headers: {
         'apikey': SUPABASE_KEY,

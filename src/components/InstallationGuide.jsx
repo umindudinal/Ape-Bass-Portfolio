@@ -13,7 +13,7 @@ const installSteps = [
     stepNum: "Step 01",
     title: "Download APK File",
     titleSi: "APK ගොනුව භාගත කරන්න",
-    desc: "Click the 'Download App (APK)' button on our website to download the official honda_baas_v1.0.apk file to your Android phone.",
+    desc: "Click the 'Download App (APK)' button on our website to download the official ape_baas_v1.0.apk file to your Android phone.",
     image: step1Img,
     badge: "1. Direct Download",
     color: "from-emerald-500 to-teal-600",
@@ -169,8 +169,8 @@ export default function InstallationGuide() {
             {/* Next / Previous Navigation & Direct Download CTA */}
             <div className="flex flex-wrap items-center gap-4 pt-6 border-t border-slate-100">
               <a 
-                href="/honda_baas_v1.0.apk"
-                download="honda_baas_v1.0.apk"
+                href="/ape_baas_v1.0.apk"
+                download="ape_baas_v1.0.apk"
                 className="btn-glow-emerald px-6 py-3.5 rounded-xl font-extrabold text-sm inline-flex items-center gap-2.5 no-underline shadow-md"
                 style={{ borderRadius: '12px' }}
               >

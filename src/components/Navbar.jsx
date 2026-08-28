@@ -118,8 +118,8 @@ export default function Navbar() {
           {/* Right Direct Download CTA Button */}
           <div className="hidden md:flex items-center gap-3">
             <a 
-              href="/honda_baas_v1.0.apk"
-              download="honda_baas_v1.0.apk"
+              href="/ape_baas_v1.0.apk"
+              download="ape_baas_v1.0.apk"
               className="btn-glow-emerald px-6 py-2.5 rounded-full text-xs sm:text-sm font-extrabold flex items-center gap-2.5 no-underline hover:scale-105 transition-transform shadow-md"
               style={{ borderRadius: '9999px' }}
             >
@@ -178,8 +178,8 @@ export default function Navbar() {
 
             <div className="pt-4 border-t border-slate-100 mt-2">
               <a 
-                href="/honda_baas_v1.0.apk" 
-                download="honda_baas_v1.0.apk"
+                href="/ape_baas_v1.0.apk" 
+                download="ape_baas_v1.0.apk"
                 onClick={() => setMobileMenuOpen(false)}
                 className="btn-glow-emerald w-full text-center py-3.5 rounded-2xl flex items-center justify-center gap-2.5 no-underline text-sm font-extrabold shadow-md"
                 style={{ borderRadius: '16px' }}

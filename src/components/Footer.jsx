@@ -29,8 +29,8 @@ export default function Footer() {
 
             <div className="flex flex-wrap gap-4">
               <a 
-                href="/honda_baas_v1.0.apk"
-                download="honda_baas_v1.0.apk"
+                href="/ape_baas_v1.0.apk"
+                download="ape_baas_v1.0.apk"
                 className="btn-glow-emerald px-7 py-4 rounded-2xl font-extrabold flex items-center gap-3.5 no-underline shadow-xl text-sm text-white hover:scale-105 transition-all duration-300"
                 style={{ borderRadius: '16px' }}
               >

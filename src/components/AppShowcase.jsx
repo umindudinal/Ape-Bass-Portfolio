@@ -174,8 +174,8 @@ export default function AppShowcase() {
 
             {/* CTA Direct Download Button */}
             <a 
-              href="/honda_baas_v1.0.apk"
-              download="honda_baas_v1.0.apk"
+              href="/ape_baas_v1.0.apk"
+              download="ape_baas_v1.0.apk"
               className="btn-glow-emerald px-7 py-3.5 rounded-xl font-extrabold text-sm inline-flex items-center gap-2.5 no-underline shadow-md"
               style={{ borderRadius: '12px' }}
             >

@@ -84,7 +84,7 @@ export default function Testimonials() {
               <Sparkles size={14} className="text-[#002B49]" /> User Comments & Reviews
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#002B49] tracking-tight leading-tight mb-4">
-              What Users Say About <span className="font-sinhala-heading text-emerald-700 font-extrabold">අපේ බාස්</span>
+              What Users Say About <br /> <span className="font-sinhala-heading text-emerald-700 font-extrabold">අපේ බාස්</span> 
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
               පරිශීලකයින් විසින් සෘජුවම එකතු කරන ලද අදහස් සහ Ratings මෙතැනින් බලන්න.

@@ -26,7 +26,7 @@ export default function FloatingWidget() {
         style={{ borderRadius: '9999px', animationDuration: '3s' }}
       >
         <Smartphone size={16} />
-        <span>Get <span className="font-sinhala-heading font-extrabold">හොඳ බාස්</span> App</span>
+        <span>Get <span className="font-sinhala-heading font-extrabold">අපේ බාස්</span> App</span>
       </a>
 
       {/* Back To Top Floating Button */}

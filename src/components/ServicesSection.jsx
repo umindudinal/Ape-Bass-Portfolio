@@ -99,7 +99,7 @@ export default function ServicesSection() {
             Everything Your Home Needs, <span className="gradient-title-text">Delivered On-Demand</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
-            Directly connect with background-checked local specialists for any home maintenance or repair job on <strong className="font-sinhala-heading font-extrabold text-emerald-700">හොඳ බාස්</strong> (Hoda Baas) app.
+            Directly connect with background-checked local specialists for any home maintenance or repair job on <strong className="font-sinhala-heading font-extrabold text-emerald-700">අපේ බාස්</strong> (Ape Baas) app.
           </p>
         </div>
 

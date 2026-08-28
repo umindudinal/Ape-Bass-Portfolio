@@ -6,7 +6,7 @@ const steps = [
     number: "01",
     title: "Select Service Category",
     titleSi: "සේවා වර්ගය තෝරාගන්න",
-    desc: "Open the හොඳ බාස් (Hoda Baas) app and select Electrical, Plumbing, AC Repair, Solar, or any repair category you need.",
+    desc: "Open the අපේ බාස් (Ape Baas) app and select Electrical, Plumbing, AC Repair, Solar, or any repair category you need.",
     highlight: "12+ Service categories",
     icon: Smartphone,
     colorGradient: "from-emerald-500 to-teal-600 shadow-emerald-500/25",

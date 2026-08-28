@@ -4,8 +4,8 @@ import { ChevronDown, HelpCircle, PhoneCall } from 'lucide-react';
 const faqs = [
   {
     category: "Homeowners",
-    q: "Is the හොඳ බාස් (Hoda Baas) Mobile App free to download and search?",
-    qSi: "හොඳ බාස් ඇප් එක භාගත කිරීම සහ භාවිතය නොමිලේම සපයනවාද?",
+    q: "Is the අපේ බාස් (Ape Baas) Mobile App free to download and search?",
+    qSi: "අපේ බාස් ඇප් එක භාගත කිරීම සහ භාවිතය නොමිලේම සපයනවාද?",
     a: "Yes! Downloading the official APK file, searching for background-checked local technicians, and browsing 12+ service categories is 100% free for all users."
   },
   {
@@ -66,7 +66,7 @@ export default function FAQSection() {
             <HelpCircle size={14} className="text-[#002B49]" /> Frequently Asked Questions
           </div>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#002B49] tracking-tight leading-tight mb-4">
-            Got Questions About <span className="font-sinhala-heading text-emerald-700 font-extrabold">හොඳ බාස්</span> App?
+            Got Questions About <span className="font-sinhala-heading text-emerald-700 font-extrabold">අපේ බාස්</span> App?
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
             Everything you need to know about using Sri Lanka's newest digital home service platform.
@@ -154,7 +154,7 @@ export default function FAQSection() {
         <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-6 text-left shadow-xs" style={{ borderRadius: '24px' }}>
           <div>
             <h4 className="font-extrabold text-lg text-[#002B49] mb-1">
-              Still Have Questions About හොඳ බාස් (Hoda Baas)?
+              Still Have Questions About අපේ බාස් (Ape Baas)?
             </h4>
             <p className="text-xs sm:text-sm text-slate-600">
               Our support team is available 24/7 to assist with your app download & booking questions.

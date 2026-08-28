@@ -1,8 +1,8 @@
-# හොඳ බාස් (Hoda Baas) - Home Services App Landing Page
+# අපේ බාස් (Ape Baas) - Home Services App Landing Page
 
 > Expert on-demand home services & repairs, on demand - right at your doorstep in Sri Lanka.
 
-Official marketing / landing page for **Hoda Baas**, a mobile app that connects customers with verified local technicians — electricians, plumbers, AC technicians, solar specialists, carpenters, painters, masons, and cleaners — in under 60 seconds. This repository contains the responsive React web app used to promote the mobile app and drive installs (Play Store + direct APK).
+Official marketing / landing page for **Ape Baas**, a mobile app that connects customers with verified local technicians — electricians, plumbers, AC technicians, solar specialists, carpenters, painters, masons, and cleaners — in under 60 seconds. This repository contains the responsive React web app used to promote the mobile app and drive installs (Play Store + direct APK).
 
 🔗 **Live Site:** _add your deployed URL here_
 

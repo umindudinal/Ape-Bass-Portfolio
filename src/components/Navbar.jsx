@@ -76,15 +76,15 @@ export default function Navbar() {
             className="flex items-center gap-3.5 no-underline group"
           >
             <div className="w-11 h-11 rounded-2xl bg-white p-1 shadow-md shadow-slate-200 border border-slate-200 group-hover:scale-105 transition-transform flex items-center justify-center shrink-0">
-              <img src={logoImg} alt="හොඳ බාස් (Hoda Baas) Logo" className="w-full h-full object-contain rounded-xl" />
+              <img src={logoImg} alt="අපේ බාස් (Ape Baas) Logo" className="w-full h-full object-contain rounded-xl" />
             </div>
             <div className="text-left">
               <div className="flex items-center gap-2">
                 <span className="font-sinhala-heading text-xl sm:text-2xl font-extrabold tracking-tight text-[#002B49] block leading-none">
-                  හොඳ බාස්
+                  අපේ බාස්
                 </span>
                 <span className="text-xs font-bold text-[#002B49] bg-slate-100 px-2.5 py-0.5 rounded-full border border-slate-200">
-                  Hoda Baas
+                  Ape Baas
                 </span>
               </div>
               <span className="text-xs font-extrabold text-slate-500 uppercase tracking-wider flex items-center gap-1 mt-0.5">
@@ -185,7 +185,7 @@ export default function Navbar() {
                 style={{ borderRadius: '16px' }}
               >
                 <Download size={18} />
-                <span>Download හොඳ බාස් App (APK)</span>
+                <span>Download අපේ බාස් App (APK)</span>
               </a>
             </div>
 

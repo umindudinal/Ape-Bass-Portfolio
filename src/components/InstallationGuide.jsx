@@ -57,7 +57,7 @@ const installSteps = [
     stepNum: "Step 05",
     title: "Open & Start Booking",
     titleSi: "ඇප් එක විවෘත කර භාවිතා කරන්න",
-    desc: "Once installed, tap 'Open' to launch හොඳ බාස් (Hoda Baas), enter your phone number for instant OTP login, and find local pros!",
+    desc: "Once installed, tap 'Open' to launch අපේ බාස් (Ape Baas), enter your phone number for instant OTP login, and find local pros!",
     image: step5Img,
     badge: "5. Ready to Use",
     color: "from-emerald-600 to-emerald-800",
@@ -83,7 +83,7 @@ export default function InstallationGuide() {
             <Download size={15} className="text-emerald-600" /> Easy 5-Step Android Guide
           </div>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#002B49] tracking-tight leading-tight mb-4">
-            How to Install <span className="font-sinhala-heading text-emerald-700 font-extrabold">හොඳ බාස්</span> APK on Your Phone
+            How to Install <span className="font-sinhala-heading text-emerald-700 font-extrabold">අපේ බාස්</span> APK on Your Phone
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
             Follow this quick 5-step visual guide to safely install our official Android application on your smartphone.

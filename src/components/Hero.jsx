@@ -29,7 +29,7 @@ export default function Hero() {
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.12] mb-6 text-[#002B49]">
               Expert Home Repairs & Services with{' '}
               <span className="block mt-2 font-sinhala-heading text-4xl sm:text-5xl lg:text-6xl gradient-text-emerald font-extrabold tracking-wider drop-shadow-xs">
-                හොඳ බාස් <span className="font-sans text-3xl sm:text-4xl text-[#002B49]/85 font-bold ml-1 tracking-tight">(Hoda Baas)</span>
+                අපේ බාස් <span className="font-sans text-3xl sm:text-4xl text-[#002B49]/85 font-bold ml-1 tracking-tight">(Ape Baas)</span>
               </span>
             </h1>
 
@@ -180,7 +180,7 @@ export default function Hero() {
               <div className="w-full bg-slate-100 rounded-xl overflow-hidden relative border border-slate-300 shadow-inner aspect-720/1483">
                 <img 
                   src={customerHomeScreen} 
-                  alt="හොඳ බාස් App on Samsung Galaxy M11" 
+                  alt="අපේ බාස් App on Samsung Galaxy M11" 
                   className="w-full h-full object-fill pointer-events-none"
                 />
               </div>

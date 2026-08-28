@@ -91,7 +91,7 @@ export default function AppShowcase() {
             <Sparkles size={14} className="text-[#002B49]" /> Mobile App Showcase
           </div>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#002B49] tracking-tight leading-tight mb-4">
-            Real Mobile Screenshots of <br /> <span className="font-sinhala-heading text-emerald-700 font-extrabold">හොඳ බාස්</span>
+            Real Mobile Screenshots of <br /> <span className="font-sinhala-heading text-emerald-700 font-extrabold">අපේ බාස්</span>
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
             Experience our official Flutter mobile application designed specifically for Sri Lankan homeowners and service providers.

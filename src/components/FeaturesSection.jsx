@@ -49,7 +49,7 @@ export default function FeaturesSection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-[#002B49] text-xs font-extrabold uppercase tracking-wider mb-4 shadow-2xs">
-            Why Choose <span className="font-sinhala-heading font-extrabold text-emerald-700 mx-1">හොඳ බාස්</span> (Hoda Baas)
+            Why Choose <span className="font-sinhala-heading font-extrabold text-emerald-700 mx-1">අපේ බාස්</span> (Ape Baas)
           </div>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#002B49] tracking-tight leading-tight mb-4">
             Built for Total Safety, <span className="gradient-title-text">Speed & Peace of Mind</span>

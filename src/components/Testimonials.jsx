@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { Star, Quote, Sparkles, CheckCircle2, MessageSquarePlus, Send, ThumbsUp, MessageCircle, Loader2 } from 'lucide-react';
-import { fetchReviewsFromSupabase, saveReviewToSupabase } from '../services/supabaseReviews';
+import { fetchReviewsFromSupabase, saveReviewToSupabase, DEFAULT_DATABASE_REVIEWS } from '../services/supabaseReviews';
 
 export default function Testimonials() {
-  // Load initial comments from localStorage (or empty array)
+  // Load initial comments from localStorage (or fallback to database reviews)
   const [reviewsList, setReviewsList] = useState(() => {
     const saved = localStorage.getItem('apebaas_user_reviews');
     if (saved) {
       try {
-        return JSON.parse(saved);
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          return parsed;
+        }
       } catch (e) {
-        return [];
+        return DEFAULT_DATABASE_REVIEWS;
       }
     }
-    return [];
+    return DEFAULT_DATABASE_REVIEWS;
   });
 
   const [isLoading, setIsLoading] = useState(false);

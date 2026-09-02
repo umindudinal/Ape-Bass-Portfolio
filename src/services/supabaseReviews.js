@@ -1,5 +1,39 @@
-const SUPABASE_URL = "https://jkpaufgndiurapvkwlml.supabase.co";
-const SUPABASE_KEY = "sb_publishable_pivcvfrJnuCP5SGPm1SRCA_h-TJXzT4";
+const SUPABASE_URL = "https://ovfqxlyowieggsveqhic.supabase.co";
+const SUPABASE_KEY = "sb_publishable_GMCVy37M9B6oVbgLR_vLag_dKRzOoGV";
+
+// Database එකේ දැනට තියෙන Reviews (Supabase Quota Exceeded හෝ Offline අවස්ථාවල පෙන්වීම සඳහා Fallback)
+export const DEFAULT_DATABASE_REVIEWS = [
+  {
+    id: 1,
+    name: "S L Dissanayaka",
+    city: "Polonnaruwa",
+    service: "Electrical Repair",
+    quote: "ගෙදර main breaker එකේ දෝශයක් ඇවිත් ape baas එකෙන් electrician කෙනෙක් ගෙන්නුවා. පැයක් ඇතුලත ඇවිත් වැඩේ ඉක්මනටම කරලා දුන්නා. ගොඩක් විශ්වාසවන්තයි!",
+    stars: 5,
+    avatarBg: "from-purple-500 to-indigo-600",
+    date: "02/09/2026"
+  },
+  {
+    id: 3,
+    name: "Nandani Walpita",
+    city: "Horana",
+    service: "AC Service Booking",
+    quote: "AC එකේ cooling අඩු වෙලා තිබුණේ. පැය බාගයක් ඇතුලත technician ආවා. Service එක සුපිරි සහ සාධාරණ ගාස්තුවක් ගත්තේ.",
+    stars: 5,
+    avatarBg: "from-sky-500 to-blue-600",
+    date: "02/09/2026"
+  },
+  {
+    id: 4,
+    name: "Methuli Binara",
+    city: "Medirigiriya",
+    service: "Solar Power Service",
+    quote: "Solar panel cleaning සහ inverter check-up එකක් කරගත්තා. Professional විදියට වැඩේ කරලා දුන්නා. Excellent service!",
+    stars: 5,
+    avatarBg: "from-purple-500 to-indigo-800",
+    date: "02/09/2026"
+  }
+];
 
 /**
  * Fetch all comments from Supabase table 'comments'
@@ -14,12 +48,14 @@ export async function fetchReviewsFromSupabase() {
     });
 
     if (!res.ok) {
-      console.warn("Supabase comments table fetch status:", res.status);
-      return null;
+      console.warn("Supabase comments table fetch status:", res.status, "- Fallback to default database reviews.");
+      return DEFAULT_DATABASE_REVIEWS;
     }
 
     const data = await res.json();
-    if (!Array.isArray(data)) return null;
+    if (!Array.isArray(data) || data.length === 0) {
+      return DEFAULT_DATABASE_REVIEWS;
+    }
 
     // Map DB fields to Component format
     return data.map(item => ({
@@ -34,7 +70,7 @@ export async function fetchReviewsFromSupabase() {
     }));
   } catch (e) {
     console.error("Supabase fetch error:", e);
-    return null;
+    return DEFAULT_DATABASE_REVIEWS;
   }
 }
 
